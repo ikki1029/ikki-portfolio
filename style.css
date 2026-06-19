@@ -18,6 +18,7 @@ body {
   background: radial-gradient(circle at top left, #ffffff 0, var(--bg) 42%, #f2eee8 100%);
   color: var(--text);
   line-height: 1.75;
+  overflow-x: hidden;
 }
 
 .page {
@@ -35,26 +36,9 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
+  grid-template-columns: minmax(0, 1fr);
   padding: 44px;
-  align-items: center;
-}
-
-.profile-image {
-  aspect-ratio: 1 / 1;
-  width: 100%;
-  border-radius: 24px;
-  overflow: hidden;
-  background: #ece7dd;
-  border: 1px solid var(--border);
-}
-
-.profile-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  align-items: start;
 }
 
 .eyebrow {
@@ -75,9 +59,9 @@ p {
 
 h1 {
   margin-bottom: 8px;
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
+  font-size: 4.2rem;
   line-height: 1;
-  letter-spacing: -0.06em;
+  letter-spacing: 0;
 }
 
 .lead {
@@ -88,6 +72,20 @@ h1 {
 
 .hero-content p:not(.eyebrow) {
   max-width: 760px;
+}
+
+.hero-content,
+.activity-main > div:last-child {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero-content p,
+.activity-card p,
+.activity-card h3 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .meta-row {
@@ -115,7 +113,7 @@ h1 {
 .section-header h2 {
   margin-bottom: 6px;
   font-size: 2rem;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .section-header p:last-child {
@@ -178,7 +176,7 @@ h1 {
   margin-bottom: 10px;
   font-size: 1.35rem;
   line-height: 1.35;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .activity-card p:last-child {
@@ -232,10 +230,6 @@ footer {
     padding: 26px;
   }
 
-  .profile-image {
-    max-width: 240px;
-  }
-
   .activity-grid {
     grid-template-columns: 1fr;
   }
@@ -243,13 +237,18 @@ footer {
 
 @media (max-width: 520px) {
   .page {
-    width: min(100% - 20px, 1120px);
+    width: calc(100% - 20px);
+    max-width: 1120px;
     padding-top: 14px;
   }
 
   .hero,
   .activity-card {
     border-radius: 22px;
+  }
+
+  .hero {
+    padding: 22px;
   }
 
   .activity-main {
@@ -262,7 +261,11 @@ footer {
   }
 
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
+  }
+
+  .lead {
+    font-size: 1.02rem;
   }
 
   .button {

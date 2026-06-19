@@ -1,6 +1,0 @@
-<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="800" height="800" fill="#ECE7DD"/>
-  <circle cx="400" cy="320" r="116" fill="#D8D0C2"/>
-  <path d="M170 690C210 565 292 500 400 500C508 500 590 565 630 690" fill="#D8D0C2"/>
-  <text x="400" y="735" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" fill="#7F7668">replace with square image</text>
-</svg>

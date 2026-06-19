@@ -5,8 +5,7 @@ GitHub Pagesでそのまま公開できる1ページ構成のポートフォリ�
 ## 使い方
 
 1. `index.html` と `style.css` をGitHub Pages用リポジトリに置く
-2. `assets/profile-placeholder.svg` を自分の正方形画像に差し替える
-3. `href="#"` を自分のブログ、GitHub、X、YouTube、Kaggle、arXivなどのURLに差し替える
+2. `href="#"` を自分のブログ、GitHub、X、YouTube、Kaggle、arXivなどのURLに差し替える
 
 ## GitHub Pages公開
 
