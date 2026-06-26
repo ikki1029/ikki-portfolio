@@ -229,8 +229,9 @@ a {
 }
 
 .x-icon {
-  color: #000000;
-  font-size: 1.35rem;
+  color: #ffffff;
+  background: #000000;
+  font-size: 1rem;
 }
 
 .hero {
