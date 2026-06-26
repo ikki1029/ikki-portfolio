@@ -3,180 +3,187 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>増田一樹のPortfolio</title>
+  <title>増田一樹のポートフォリオサイト</title>
   <meta name="description" content="増田一樹のポートフォリオ。AI、研究、サービス開発、SLM、データサイエンスなどの活動をまとめています。" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main class="page">
-    <section class="hero card">
-      <div class="hero-content">
-        <p class="eyebrow">AI × Math × Data Science</p>
-        <h1>増田　一樹</h1>
-        <p class="lead">
-          早稲田大学基幹理工学部応用数理学科４年
+<body id="top">
+  <main class="site-shell">
+    <header class="site-header" aria-label="サイトヘッダー">
+      <a class="brand" href="#top" aria-label="ホームへ戻る">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M15 38 28 14l19 11-6 23-26-10Z" />
+          <path d="M14 40 6 50m23-36 3-9m15 20 10-7M41 48l7 10" />
+          <circle cx="15" cy="38" r="4" />
+          <circle cx="28" cy="14" r="4" />
+          <circle cx="47" cy="25" r="4" />
+          <circle cx="41" cy="48" r="4" />
+          <circle cx="6" cy="50" r="3" />
+          <circle cx="32" cy="5" r="3" />
+          <circle cx="57" cy="18" r="3" />
+          <circle cx="48" cy="58" r="3" />
+        </svg>
+        <span>
+          <strong>Ikki Masuta</strong>
+          <small>AI × Math × Data Science</small>
+        </span>
+      </a>
+
+      <nav class="site-nav" aria-label="主要リンク">
+        <a class="nav-link active" href="#top">
+          <span class="nav-icon">⌂</span>
+          ホーム
+        </a>
+        <a class="nav-link" href="https://github.com/ikki1029" target="_blank" rel="noreferrer">
+          <span class="nav-icon github-icon">GH</span>
+          GitHub
+        </a>
+        <a class="nav-link" href="https://qiita.com/masuiti" target="_blank" rel="noreferrer">
+          <span class="nav-icon qiita-icon">Q</span>
+          Qiita
+        </a>
+        <a class="nav-link" href="https://x.com/masuiti1029" target="_blank" rel="noreferrer">
+          <span class="nav-icon x-icon">X</span>
+          X
+        </a>
+      </nav>
+
+      <details class="mobile-menu">
+        <summary aria-label="メニューを開く">
+          <span></span>
+          <span></span>
+          <span></span>
+        </summary>
+        <div class="mobile-menu-panel">
+          <a class="active" href="#top">ホーム</a>
+          <a href="https://github.com/ikki1029" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://qiita.com/masuiti" target="_blank" rel="noreferrer">Qiita</a>
+          <a href="https://x.com/masuiti1029" target="_blank" rel="noreferrer">X</a>
+        </div>
+      </details>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">増田 一樹の<br><span class="nowrap">ポートフォリオ<wbr>サイト</span></h1>
+        <span class="hero-line" aria-hidden="true"></span>
+
+        <p class="hero-lead">
+          AIに強く惹かれ、「もっと深く理解したい」という思いから学び続けています。
         </p>
-        <p>
 
-  AIに強く惹かれ、「もっと深く理解したい」という思いから学び続けています。<br><br>
+        <div class="value-block">
+          <p>私はAIを理解する上で、</p>
+          <ul class="value-list">
+            <li><span class="value-dot dot-blue"></span>最新情報を追う</li>
+            <li><span class="value-dot dot-green"></span>実際に使ってみる</li>
+            <li><span class="value-dot dot-purple"></span>理論を学ぶ</li>
+          </ul>
+          <p>の3つを大切にしています。</p>
+        </div>
 
-  私はAIを理解する上で、<br>
-
-  ・最新情報を追う<br>
-
-  ・実際に使ってみる<br>
-
-  ・理論を学ぶ<br>
-
-  の3つを大切にしています。<br><br>
-
-  その考えをもとに、現在は以下の活動に取り組んでいます。<br><br>
-
-  <strong>インターン</strong><br>
-
-  実務を通じて、ビジネスに活用できるデータサイエンスを学んでいます。<br><br>
-
-  <strong>AIを使ってみる</strong><br>
-
-  NotebookLMやNotion AIなどの最新ツールを実際に利用し、その体験や学びを記事として発信しています。<br><br>
-
-  <strong>AIニュース読み</strong><br>
-
-  AIに関する最新動向を継続的に追い、知識のアップデートを習慣化しています。<br><br>
-
-  <strong>研究</strong><br>
-
-  大学では、機械学習モデルを用いた偏微分方程式のシミュレーションにおける精度向上をテーマに研究を行っています。<br><br>
-
-  <strong>SLM要素技術研究</strong><br>
-
-  Qwenを用いて、小規模言語モデルにおける創造性について自主研究を行っています。<br><br>
-
-  <strong>サービス開発</strong><br>
-
-  世の中の課題に対して、AIやソフトウェアを活用したプロダクトの企画・開発を行い、実際にリリースまで取り組んでいます。<br><br>
-
-  <strong>その他（個人開発・コンペ・イベント等）</strong><br>
-
-  個人的な機械学習モデルの開発やコンペへの参加、技術イベントへの参加を通じて、開発力やAI・機械学習に関する知見を広げています。<br><br>
-
-  以下のカードでは、それぞれの活動内容や成果について紹介しています。
+        <p class="hero-note">
+          その考えをもとに、現在は以下の活動に取り組んでいます。
         </p>
+      </div>
 
-
-        <div class="meta-row">
-          <span>🎓 Student</span>
-          <a href="https://github.com/ikki1029">GitHub</a>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="cube-shadow"></div>
+        <div class="ai-cube">
+          <span>AI</span>
         </div>
       </div>
     </section>
 
-    <section class="section-header">
-      <p class="eyebrow">Activities</p>
-      <h2>活動まとめ</h2>
-    </section>
-
-    <section class="activity-grid">
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon blue">▮</div>
-          <div>
-            <p class="tag">Internship</p>
-            <h3>インターン（DS）</h3>
-            <p>データサイエンス領域のインターンとして、データ分析・可視化・モデル構築などの実務に携わっています。</p>
-          </div>
+    <section class="activity-grid" id="activities" aria-label="活動まとめ">
+      <article class="activity-card card-blue" id="internship">
+        <div class="card-top">
+          <span class="activity-icon">▣</span>
+          <span class="card-number">01</span>
         </div>
-        <div class="button-row">
-          <a class="button primary" href="https://qiita.com/masuiti/items/1e086181189b55bcce7a">インターン経験まとめ</a>
-        </div>
+        <p class="tag">Internship</p>
+        <h2>インターン</h2>
+        <span class="card-line"></span>
+        <p>実務を通じて、ビジネスに活用できるデータサイエンスを学んでいます。</p>
+        <a class="detail-link" href="https://qiita.com/masuiti/items/1e086181189b55bcce7a" target="_blank" rel="noreferrer">詳細を見る <span>→</span></a>
       </article>
 
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon green">✺</div>
-          <div>
-            <p class="tag">AI Workflow</p>
-            <h3>AIを使ってみる</h3>
-            <p>Notion AIやClaude Codeなどを話題のAIを使ってみて、感じたことや考えたことを書いています</p>
-          </div>
+      <article class="activity-card card-green" id="ai-workflow">
+        <div class="card-top">
+          <span class="activity-icon">✧</span>
+          <span class="card-number">02</span>
         </div>
-        <div class="button-row">
-          <a class="button primary" href="https://qiita.com/masuiti/items/9e29446dffe96c397196">Qiita</a>
-        </div>
+        <p class="tag">AI Workflow</p>
+        <h2>AIを使ってみる</h2>
+        <span class="card-line"></span>
+        <p>NotebookLMやNotion AIなどの最新ツールを実際に利用し、その体験や学びを記事として発信しています。</p>
+        <a class="detail-link" href="https://qiita.com/masuiti/items/9e29446dffe96c397196" target="_blank" rel="noreferrer">詳細を見る <span>→</span></a>
       </article>
 
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon purple">▤</div>
-          <div>
-            <p class="tag">AI News</p>
-            <h3>AIニュース読み</h3>
-            <p>AI関連の最新ニュースを毎日チェックし、学びや気づきを発信しています。</p>
-          </div>
+      <article class="activity-card card-purple" id="ai-news">
+        <div class="card-top">
+          <span class="activity-icon">▤</span>
+          <span class="card-number">03</span>
         </div>
-        <div class="button-row">
-          <a class="button" href="https://x.com/masuiti1029">X / Twitter</a>
-        </div>
+        <p class="tag">AI News</p>
+        <h2>AIニュース読み</h2>
+        <span class="card-line"></span>
+        <p>AIに関する最新動向を継続的に追い、知識のアップデートを習慣化しています。</p>
+        <a class="detail-link" href="https://x.com/masuiti1029" target="_blank" rel="noreferrer">詳細を見る <span>→</span></a>
       </article>
 
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon yellow">⌁</div>
-          <div>
-            <p class="tag">Research</p>
-            <h3>研究</h3>
-            <p>現在、研究中です。</p>
-          </div>
+      <article class="activity-card card-orange" id="research">
+        <div class="card-top">
+          <span class="activity-icon">⌁</span>
+          <span class="card-number">04</span>
         </div>
-        <div class="button-row">
-
-        </div>
+        <p class="tag">Research</p>
+        <h2>研究</h2>
+        <span class="card-line"></span>
+        <p>大学では、機械学習モデルを用いた偏微分方程式のシミュレーションにおける精度向上をテーマに研究を行っています。</p>
+        <span class="detail-link muted">詳細を見る <span>→</span></span>
       </article>
 
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon red">◌</div>
-          <div>
-            <p class="tag">Personal Research</p>
-            <h3>SLM要素技術研究</h3>
-            <p>自然言語処理モデルやSLMに興味があり、個人でSLMの要素技術の研究をしています。</p>
-          </div>
+      <article class="activity-card card-pink" id="slm">
+        <div class="card-top">
+          <span class="activity-icon">✺</span>
+          <span class="card-number">05</span>
         </div>
-        <div class="button-row">
-          <a class="button" href="https://youtube.com/playlist?list=PLRxjlkLVUQUEYbf5HNlclT9epgjCyCZPQ&si=TlSfFX0TFLT-PJ7B">SLM自主ゼミ</a>
-        </div>
+        <p class="tag">Personal Research</p>
+        <h2>SLM要素技術研究</h2>
+        <span class="card-line"></span>
+        <p>Qwenを用いて、小規模言語モデルにおける創造性について自主研究を行っています。</p>
+        <a class="detail-link" href="https://youtube.com/playlist?list=PLRxjlkLVUQUEYbf5HNlclT9epgjCyCZPQ&si=TlSfFX0TFLT-PJ7B" target="_blank" rel="noreferrer">詳細を見る <span>→</span></a>
       </article>
 
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon sky">◇</div>
-          <div>
-            <p class="tag">Product Development</p>
-            <h3>サービス開発</h3>
-            <p>世の中の課題に対して、AIやソフトウェアを活用したプロダクトの企画・開発を行い、実際にリリースまで取り組んでいます。</p>
-          </div>
+      <article class="activity-card card-cyan" id="service">
+        <div class="card-top">
+          <span class="activity-icon">&lt;/&gt;</span>
+          <span class="card-number">06</span>
         </div>
-        <div class="button-row">
-
-        </div>
+        <p class="tag">Product Development</p>
+        <h2>サービス開発</h2>
+        <span class="card-line"></span>
+        <p>世の中の課題に対して、AIやソフトウェアを活用したプロダクトの企画・開発を行い、実際にリリースまで取り組んでいます。</p>
+        <span class="detail-link muted">詳細を見る <span>→</span></span>
       </article>
 
-      <article class="activity-card card">
-        <div class="activity-main">
-          <div class="icon green">＋</div>
-          <div>
-            <p class="tag">Personal Projects</p>
-            <h3>その他（個人開発・コンペ・イベント等）</h3>
-            <p>個人的な機械学習モデルの開発やコンペへの参加、技術イベントへの参加を通じて、開発力やAI・機械学習に関する知見を広げています。</p>
-          </div>
+      <article class="activity-card card-slate" id="other">
+        <div class="card-top">
+          <span class="activity-icon">☷</span>
+          <span class="card-number">07</span>
         </div>
-        <div class="button-row">
-
-        </div>
+        <p class="tag">Others</p>
+        <h2>その他<br><small>（個人開発・コンペ・<br>イベント等）</small></h2>
+        <span class="card-line"></span>
+        <p>個人的な機械学習モデルの開発やコンペへの参加、技術イベントへの参加を通じて、開発力やAI・機械学習に関する知見を広げています。</p>
+        <span class="detail-link muted">詳細を見る <span>→</span></span>
       </article>
     </section>
 
-    <footer>
+    <footer class="site-footer">
       <p>© 2026 Ikki Masuta</p>
     </footer>
   </main>
